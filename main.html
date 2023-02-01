@@ -7,8 +7,6 @@
     <title>Video Streaming</title>
     <!-- bootstraph -->
     <link rel="stylesheet" href="static/css/bootstrap.min.css" />
-    <!-- swiper js -->
-    <link rel="stylesheet" href="static/css/swiper-bundle.min.css" />
     <!-- font awesome -->
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
@@ -94,29 +92,10 @@
                 <h4 class="sub-title">Online Streaming</h4>
                 <h2 class="main-title">Upcoming Movies</h2>
               </div>
-              <div class="tabs__wrapper">
-                <div class="swiper__arrow">
-                  <div class="swiper-button-prev">
-                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none">
-                      <path
-                        d="M0.168786 6.99996L7.02019 0.167509C7.24467 -0.0562167 7.6081 -0.0558406 7.8322 0.168667C8.05613 0.393145 8.05555 0.756783 7.83105 0.980682L1.38746 7.40648L7.83128 13.8322C8.05576 14.0562 8.05634 14.4196 7.83244 14.6441C7.7201 14.7566 7.57292 14.8129 7.42575 14.8129C7.27895 14.8129 7.13236 14.757 7.02022 14.6452L0.168786 7.81296C0.0606694 7.7054 0 7.559 0 7.40648C0 7.25395 0.060843 7.10773 0.168786 6.99996Z"
-                        fill="#C4C4C4"
-                      />
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next">
-                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none">
-                      <path
-                        d="M7.83121 6.99996L0.979811 0.167509C0.755333 -0.0562167 0.391897 -0.0558406 0.167795 0.168667C-0.0561333 0.393145 -0.0555547 0.756783 0.168953 0.980682L6.61254 7.40648L0.168721 13.8322C-0.0557573 14.0562 -0.0563359 14.4196 0.167564 14.6441C0.279904 14.7566 0.427078 14.8129 0.574252 14.8129C0.721049 14.8129 0.867644 14.757 0.979782 14.6452L7.83121 7.81296C7.93933 7.7054 8 7.559 8 7.40648C8 7.25395 7.93916 7.10773 7.83121 6.99996Z"
-                        fill="#C4C4C4"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
+
         <div class="row">
           <div class="col-12">
             <div class="tab-content" id="myTabContent">
@@ -128,977 +107,171 @@
                 tabindex="0"
               >
                 <div class="content__body">
-                  <div class="movies__wrapper swiper__pagination">
-                    <div class="swiper movies__Swiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                      <div class="Mcard__inner">
+                        <div class="movie-card__wrapper">
+                          <a href="movie-single.html" class="card__image">
+                            <img
+                              src="static/images/m-image-01.jpg"
+                              alt="movie-img"
+                            />
+                          </a>
 
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
+                          <div class="card__content">
+                            <div class="year">2022</div>
+                            <h4 class="card__title">
+                              <a href="#">avengers endgame</a>
+                            </h4>
+                            <div class="card__action">
+                              <ul>
+                                <li>
+                                  <a href="#">
+                                    <img
+                                      src="static/images/heart.png"
+                                      alt="heart"
+                                    />
+                                    1.5k</a
+                                  >
+                                </li>
+                              </ul>
                             </div>
                           </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-03.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
+
+                          <div class="card__content--bottom">
+                            <div class="duration">
                               <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
+                              <img src="static/images/add.png" alt="add" />
                             </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
+                            <div class="duration">
+                              <img class="clock_img" src="static/images/clock.png" alt="clock" />
+                              128 min
                             </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="movie-tab-pane"
-                role="tabpanel"
-                aria-labelledby="movie-tab"
-                tabindex="0"
-              >
-                <div class="content__body">
-                  <div class="movies__wrapper swiper__pagination">
-                    <div class="swiper movies__Swiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                  <div class="Mcard__inner">
+                    <div class="movie-card__wrapper">
+                      <a href="movie-single.html" class="card__image">
+                        <img
+                          src="static/images/m-image-01.jpg"
+                          alt="movie-img"
+                        />
+                      </a>
+                      <div class="card__content">
+                        <div class="year">2022</div>
+                        <h4 class="card__title">
+                          <a href="#">avengers endgame</a>
+                        </h4>
+                        <div class="card__action">
+                          <ul>
+                            <li>
+                              <a href="#">
                                 <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
+                                  src="static/images/heart.png"
+                                  alt="heart"
                                 />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                                1.5k</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                      </div>
+                      <div class="card__content--bottom">
+                        <div class="duration">
+                          <span class="quality">hD</span>
+                          <img src="static/images/add.png" alt="add" />
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-03.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-03.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                        <div class="duration">
+                          <img class="clock_img" src="static/images/clock.png" alt="clock" />
+                          128 min
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
-                class="tab-pane fade"
-                id="anime-tab-pane"
-                role="tabpanel"
-                aria-labelledby="anime-tab"
-                tabindex="0"
-              >
-                <div class="content__body">
-                  <div class="movies__wrapper swiper__pagination">
-                    <div class="swiper movies__Swiper">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                  <div class="Mcard__inner">
+                    <div class="movie-card__wrapper">
+                      <a href="movie-single.html" class="card__image">
+                        <img
+                          src="static/images/m-image-01.jpg"
+                          alt="movie-img"
+                        />
+                      </a>
+                      <div class="card__content">
+                        <div class="year">2022</div>
+                        <h4 class="card__title">
+                          <a href="#">avengers endgame</a>
+                        </h4>
+                        <div class="card__action">
+                          <ul>
+                            <li>
+                              <a href="#">
                                 <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
+                                  src="static/images/heart.png"
+                                  alt="heart"
                                 />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                                1.5k</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                      </div>
+                      <div class="card__content--bottom">
+                        <div class="duration">
+                          <span class="quality">hD</span>
+                          <img src="static/images/add.png" alt="add" />
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-03.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                        <div class="duration">
+                          <img class="clock_img" src="static/images/clock.png" alt="clock" />
+                          128 min
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                  <div class="Mcard__inner">
+                    <div class="movie-card__wrapper">
+                      <a href="movie-single.html" class="card__image">
+                        <img
+                          src="static/images/m-image-01.jpg"
+                          alt="movie-img"
+                        />
+                      </a>
+                      <div class="card__content">
+                        <div class="year">2022</div>
+                        <h4 class="card__title">
+                          <a href="#">avengers endgame</a>
+                        </h4>
+                        <div class="card__action">
+                          <ul>
+                            <li>
+                              <a href="#">
                                 <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
+                                  src="static/images/heart.png"
+                                  alt="heart"
                                 />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                                1.5k</a
+                              >
+                            </li>
+                          </ul>
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-01.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">avengers endgame</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                      </div>
+                      <div class="card__content--bottom">
+                        <div class="duration">
+                          <span class="quality">hD</span>
+                          <img src="static/images/add.png" alt="add" />
                         </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-02.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">The lord of the rings</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-03.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Star wars</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">4k</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide">
-                          <div class="movie-card__wrapper">
-                            <a href="movie-single.html" class="card__image">
-                              <img
-                                src="static/images/m-image-04.jpg"
-                                alt="movie-img"
-                              />
-                            </a>
-                            <div class="card__content">
-                              <div class="year">2022</div>
-                              <h4 class="card__title">
-                                <a href="#">Joker</a>
-                              </h4>
-                              <div class="card__action">
-                                <ul>
-                                  <li>
-                                    <a href="#">
-                                      <img
-                                        src="static/images/heart.png"
-                                        alt="clock"
-                                      />
-                                      1.5k</a
-                                    >
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="card__content--bottom">
-                              <span class="quality">hD</span>
-                              <div class="duration">
-                                <img
-                                  src="static/images/clock.png"
-                                  alt="clock"
-                                />
-                                128 min
-                              </div>
-                            </div>
-                          </div>
+                        <div class="duration">
+                          <img class="clock_img" src="static/images/clock.png" alt="clock" />
+                          128 min
                         </div>
                       </div>
                     </div>
@@ -1106,16 +279,230 @@
                 </div>
               </div>
             </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Movies Section End -->
 
+    <!-- Online Show Section Start -->
+    <section class="onlineShow__section bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h4 class="sub-title">online Streaming</h4>
+              <h2 class="main-title">Watch Shows Online</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="onlineShow__card">
+              <div class="onlineShow__thumb">
+                <img src="static/images/m-show-01.jpg" alt="onlineShow-show" />
+              </div>
+              <div class="onlineShow__overlay text-center">
+                <figure class="video-box">
+                  <a
+                    data-fancybox=""
+                    data-width="640"
+                    data-height="360"
+                    data-small-btn="true"
+                    class="video-btn"
+                    href="https://www.youtube.com/watch?v=tv7LfFeamsc"
+                  >
+                    <img
+                      src="static/images/play-button.png"
+                      alt="play-button"
+                    />
+                  </a>
+                </figure>
+                <div class="onlineShow__content">
+                  <a href="#" class="action__btn btn btn-primary">Action</a>
+                  <h4 class="onlineShow__title">Stories Of The Dark</h4>
+                  <div class="release">5 Seasons - 2017</div>
+                </div>
+                <div class="card__action">
+                  <ul>
+                    <li>
+                      <img src="static/images/heart.png" alt="heart" />
+                    </li>
+                    <li>
+                      <img src="static/images/add.png" alt="add" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="onlineShow__card">
+              <div class="onlineShow__thumb">
+                <img src="static/images/m-show-02.jpg" alt="onlineShow-show" />
+              </div>
+              <div class="onlineShow__overlay text-center">
+                <figure class="video-box">
+                  <a
+                    data-fancybox=""
+                    data-width="640"
+                    data-height="360"
+                    data-small-btn="true"
+                    class="video-btn"
+                    href="https://www.youtube.com/watch?v=tv7LfFeamsc"
+                  >
+                    <img
+                      src="static/images/play-button.png"
+                      alt="play-button"
+                    />
+                  </a>
+                </figure>
+                <div class="onlineShow__content">
+                  <a href="#" class="action__btn btn btn-primary">Action</a>
+                  <h4 class="onlineShow__title">Stories Of The Dark</h4>
+                  <div class="release">5 Seasons - 2017</div>
+                </div>
+                <div class="card__action">
+                  <ul>
+                    <li>
+                      <img src="static/images/heart.png" alt="heart" />
+                    </li>
+                    <li>
+                      <img src="static/images/add.png" alt="add" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="onlineShow__card">
+              <div class="onlineShow__thumb">
+                <img src="static/images/m-show-03.jpg" alt="onlineShow-show" />
+              </div>
+              <div class="onlineShow__overlay text-center">
+                <figure class="video-box">
+                  <a
+                    data-fancybox=""
+                    data-width="640"
+                    data-height="360"
+                    data-small-btn="true"
+                    class="video-btn"
+                    href="https://www.youtube.com/watch?v=tv7LfFeamsc"
+                  >
+                    <img
+                      src="static/images/play-button.png"
+                      alt="play-button"
+                    />
+                  </a>
+                </figure>
+                <div class="onlineShow__content">
+                  <a href="#" class="action__btn btn btn-primary">Action</a>
+                  <h4 class="onlineShow__title">Stories Of The Dark</h4>
+                  <div class="release">5 Seasons - 2017</div>
+                </div>
+                <div class="card__action">
+                  <ul>
+                    <li>
+                      <img src="static/images/heart.png" alt="heart" />
+                    </li>
+                    <li>
+                      <img src="static/images/add.png" alt="add" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Online Show Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer__section bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="footer__wrapper">
+              <div class="footer__widget d-block">
+                <div class="footer__logo">
+                  <a href="main.html"
+                    ><img src="static/images/logo.png" alt="logo"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12">
+            <div class="footer__wrapper">
+              <div class="footer__widget d-block">
+                <address>
+                  <div class="title"><a href="#">자주 묻는 질문</a></div>
+                  <a href="#"
+                    ><img
+                      src="static/images/location.png"
+                      alt="location-icon"
+                    />05048, Gwangin-gu, Seoul
+                  </a>
+                  <a href="luvem01@naver.com"
+                    ><img
+                      src="static/images/email.png"
+                      alt="email-icon"
+                    />luvem01@naver.com</a
+                  >
+                  <a href="tel:01031038512"
+                    ><img
+                      src="static/images/call.png"
+                      alt="call-icon"
+                    />010-3103-8512</a
+                  >
+                </address>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 col-sm-12">
+            <div class="footer__wrapper">
+              <div class="footer__widget">
+                <div class="title">Categories</div>
+                <ul>
+                  <li><a href="#">Comedy</a></li>
+                  <li><a href="#">TV Shows</a></li>
+                  <li><a href="#">Comedy</a></li>
+                  <li><a href="#">Horror</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="footer__content text-center">
+                <div class="content">
+                  <p>
+                    &copy;
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    by <a href="Http://www.bootstrapmb.com">bootstrapMB</a>. All
+                    rights reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
     <!-- JS -->
-    <script src="static/js/jquery-3.6.0.min.js"></script>
     <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/swiper-bundle.min.js"></script>
     <script src="static/js/scripts.js"></script>
   </body>
 </html>
