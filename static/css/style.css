@@ -50,7 +50,7 @@ ul,
 .bottom__meta .share-icon {
   margin: 0;
   padding: 0;
-  list-style: inherit;
+  list-style: none;
 }
 
 figure {
@@ -60,7 +60,7 @@ figure {
 section {
   display: block;
   position: relative;
-  padding: 130px 0;
+  padding: 50px 0;
   width: 100%;
 }
 
@@ -334,7 +334,7 @@ button:focus {
 /*  Section Tittle Start
 *********************************/
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   position: relative;
   z-index: 1;
 }
@@ -2375,7 +2375,6 @@ ca .breadcrumb__wrapper.text-center {
 }
 
 .pricing__wrapper .pricing__header {
-  font-family: "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 30px;
@@ -2388,7 +2387,6 @@ ca .breadcrumb__wrapper.text-center {
 }
 
 .pricing__wrapper .sub__header {
-  font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -2399,7 +2397,6 @@ ca .breadcrumb__wrapper.text-center {
 }
 
 .pricing__wrapper .price {
-  font-family: "Poppins", sans-serif;
   font-size: 48px;
   line-height: 30px;
   font-weight: 500;
@@ -2457,7 +2454,6 @@ ca .breadcrumb__wrapper.text-center {
 .pricing__wrapper ul li,
 .pricing__wrapper .bottom__meta .share-icon li,
 .bottom__meta .pricing__wrapper .share-icon li {
-  font-family: "Poppins", sans-serif;
   font-size: 17px;
   font-weight: 400;
   line-height: 24px;
@@ -2537,4 +2533,203 @@ ca .breadcrumb__wrapper.text-center {
 
 /*********************************
 /* Pricing Section End
+*********************************/
+
+/*********************************
+/* Q&A Start
+*********************************/
+
+.que {
+  position: relative;
+  padding: 17px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border-bottom: 1px solid #5c6680;
+  color: #dddddd;
+}
+
+.que img {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.que.on > span {
+  font-weight: bold;
+  color: #e90101;
+}
+
+.anw {
+  display: none;
+  overflow: hidden;
+  font-size: 20px;
+  background-color: #dbdbd3;
+  padding: 27px 0;
+}
+
+.anw span {
+  padding-left: 10px;
+}
+
+.arrow-wrap {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+}
+
+.que .arrow-top {
+  display: none;
+}
+.que .arrow-bottom {
+  display: block;
+}
+.que.on .arrow-bottom {
+  display: none;
+}
+.que.on .arrow-top {
+  display: block;
+}
+
+/*********************************
+/* Q&A End
+*********************************/
+
+/*********************************
+/* Board Start
+*********************************/
+
+.b-contact-top-section {
+  padding-top: 0px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  color: #dbdbd3;
+}
+
+.board-table {
+  font-size: 15px;
+  width: 100%;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.board-table a {
+  color: #dbdbd3;
+  display: inline-block;
+  line-height: 1.4;
+  word-break: break-all;
+  vertical-align: middle;
+}
+.board-table a:hover {
+  text-decoration: underline;
+}
+.board-table th {
+  text-align: center;
+}
+
+.board-table .th-num {
+  width: 100px;
+  text-align: center;
+}
+
+.board-table .th-date {
+  width: 200px;
+}
+
+.board-table th,
+.board-table td {
+  padding: 14px 0;
+}
+
+.board-table tbody td {
+  border-top: 1px solid #e7e7e7;
+  text-align: center;
+}
+
+.board-table tbody th {
+  padding-left: 28px;
+  padding-right: 14px;
+  border-top: 1px solid #e7e7e7;
+  text-align: left;
+}
+
+.b-contact-top-section .board_btn {
+  padding-top: 20px;
+  float: right;
+  margin-right: 55px;
+}
+
+/*********************************
+/* Board End
+*********************************/
+
+/*********************************
+/* Board_Modify Start
+*********************************/
+.modify-btn {
+  text-align: center;
+}
+.modify-btn-list li {
+  display: inline-block;
+}
+
+/*********************************
+/* Board_Modify End
+*********************************/
+
+/*********************************
+/* pay Start
+*********************************/
+
+.contact__box--wrapper {
+  background: #01111b;
+  border: 1px solid #17384e;
+  -webkit-box-shadow: 0px 4px 8px rgba(14, 30, 53, 0.16);
+  box-shadow: 0px 4px 8px rgba(14, 30, 53, 0.16);
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  height: calc(100% - 30px);
+  width: 100%;
+  color: #e7e7e7;
+}
+
+@media screen and (max-width: 991px) {
+  .contact__box--wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+.contact__box--wrapper .popup__subtitle {
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact__box--wrapper .form-check {
+  padding-right: 50px;
+}
+
+.contact__box--wrapper .form-check-label {
+  font-size: 20px;
+}
+
+.contact__box--wrapper .form-pay li {
+  display: inline-block;
+  padding-top: 30px;
+  padding-right: 80px;
+}
+
+.contact__box--wrapper .submit__btn {
+  padding-top: 30px;
+}
+
+.section2 .section-title .main-title {
+  padding-bottom: 50px;
+}
+
+/*********************************
+/* Pay End
 *********************************/
