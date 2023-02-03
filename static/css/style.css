@@ -331,6 +331,289 @@ button:focus {
 }
 
 /*********************************
+/* Header Toggle Start 
+*********************************/
+.header__toggle {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 575px) {
+  .header__toggle {
+    margin-left: 0;
+  }
+}
+
+.header__toggle .toggler__btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  outline: none;
+  font-size: 24px;
+  border: none;
+  padding: 0;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #a7a7a785;
+  background: transparent;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.header__toggle .toggler__btn:hover {
+  background: #e90101;
+  border-color: #e90101;
+}
+
+.header__toggle .toggler__btn svg path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 575px) {
+  .header__toggle .toggler__btn {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.header__toggle .toggler__btn svg {
+  width: 24px;
+  height: 26px;
+}
+
+@media screen and (max-width: 575px) {
+  .header__toggle .toggler__btn svg {
+    width: 20px;
+    height: 22px;
+  }
+}
+
+.header__toggle .toggler__btn i {
+  pointer-events: none;
+}
+
+/*********************************
+/* Header Toggle End 
+*********************************/
+
+/*********************************
+/* FlyOut Menu Start
+*********************************/
+.flyoutMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.flyoutMenu.active {
+  opacity: 1;
+  visibility: visible;
+  right: 0;
+}
+
+.flyoutMenu.active .flyout__flip {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.flyoutMenu .flyout__flip {
+  -webkit-box-align: inherit;
+  -ms-flex-align: inherit;
+  align-items: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  background: #000000;
+  width: 360px;
+  height: 100%;
+  -webkit-box-shadow: 0px 14px 40px 0px #73737326;
+  box-shadow: 0px 14px 40px 0px #73737326;
+  padding: 30px 25px;
+  z-index: 99999;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 479px) {
+  .flyoutMenu .flyout__flip {
+    width: 370px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .flyoutMenu .flyout__flip {
+    width: 310px;
+  }
+}
+
+.flyoutMenu .flyout__inner .menu__header-top {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flyoutMenu .flyout__inner .menu__header-top .closest__btn {
+  cursor: pointer;
+}
+
+.flyoutMenu .flyout__inner .menu__header-top .closest__btn svg path {
+  stroke: #fff;
+}
+
+.flyoutMenu .flyout-main__menu {
+  margin-top: 30px;
+}
+
+.flyoutMenu .flyout-main__menu li {
+  position: relative;
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid #292929;
+}
+
+.flyoutMenu .flyout-main__menu li a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  display: block;
+  line-height: 24px;
+  padding: 0px 0;
+  text-transform: capitalize;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  position: relative;
+}
+
+.flyoutMenu .flyout-main__menu li a:hover,
+.flyoutMenu .flyout-main__menu li a.active {
+  color: #e90101;
+  font-weight: 600;
+}
+
+.flyoutMenu .flyout-main__menu li a:hover::after,
+.flyoutMenu .flyout-main__menu li a.active::after {
+  color: #e90101 !important;
+}
+
+.flyoutMenu .flyout-main__menu li:last-child a {
+  margin-right: 0;
+}
+
+.flyoutMenu .flyout-main__menu li.has__dropdown a {
+  position: relative;
+}
+
+.flyoutMenu .flyout-main__menu li.has__dropdown a::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 11px;
+  color: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu {
+  position: relative;
+  background: #000000;
+  z-index: 99;
+  padding-left: 16px;
+  margin-top: 8px;
+  display: none;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li {
+  padding: 0;
+  border: none;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li:last-of-type {
+  margin-bottom: 0;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li a {
+  padding: 7px 0;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li a::after {
+  display: none;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li a:hover,
+.flyoutMenu .flyout-main__menu li .sub__menu li a.active {
+  color: #e90101;
+}
+
+.flyoutMenu .flyout-main__menu li .sub__menu li:last-child a {
+  border: none;
+}
+
+/*********************************
+/* FlyOut Menu End
+*********************************/
+
+/*********************************
 /*  Section Tittle Start
 *********************************/
 .section-title {
@@ -735,6 +1018,73 @@ button:focus {
   .movies__section .tabs__wrapper {
     margin-bottom: 30px;
   }
+}
+
+.search__form {
+  max-width: 540px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .search__form {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.search__bar {
+  width: 100%;
+}
+
+.search__bar .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5c6680;
+  border-radius: 4px;
+  background: rgba(32, 33, 43, 0.5);
+}
+
+.search__bar .form-group .form-control {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #979797;
+  padding: 12px 0px 12px 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.search__bar .form-group .form-control:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search__bar .form-group .sub-btn {
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.search__bar .form-group .sub-btn img {
+  margin-left: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .Mcard__inner {
@@ -2659,6 +3009,74 @@ table {
   padding-top: 20px;
   float: right;
   margin-right: 55px;
+}
+
+.b-contact-top-section .search__form {
+  max-width: 400px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  float: right;
+  margin-left: 20px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 575px) {
+  .search__form {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+.search__bar {
+  width: 100%;
+}
+
+.search__bar .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #5c6680;
+  border-radius: 4px;
+  background: rgba(32, 33, 43, 0.5);
+}
+
+.search__bar .form-group .form-control {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  color: #979797;
+  padding: 12px 0px 12px 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.search__bar .form-group .form-control:focus {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.search__bar .form-group .sub-btn {
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.search__bar .form-group .sub-btn img {
+  margin-left: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 /*********************************
